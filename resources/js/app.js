@@ -47,8 +47,10 @@ import store from './store/store';
 import vuetify from './plugins/vuetify';
 import i18n from './plugins/i18n';
 import Axios from 'axios';
+import moment from 'moment'
 import VMdDateRangePicker from "v-md-date-range-picker";
 Vue.use(VMdDateRangePicker);
+
 
 Vue.config.productionTip = false
 
@@ -67,6 +69,7 @@ if (typeof token != "undefined" && typeof token_type != "undefined") {
 Vue.use(Vuex);
 
 Vue.prototype.$http = Axios
+Vue.prototype.moment = moment
 
 
 
