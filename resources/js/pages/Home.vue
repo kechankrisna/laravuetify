@@ -9,6 +9,7 @@
                 <v-card-text>
                     <v-container centered>
                         <p>{{$t('app.description')}}</p>
+                        <p>{{ moment().format('LLL') }}</p>
                         <v-row >
                             <v-btn rounded outlined :to="{ 'name':'login' }" color="success">{{$t('form.login')}}</v-btn>
                             <v-btn rounded outlined :to="{ 'name':'register' }" color="blue">{{$t('form.register')}}</v-btn>

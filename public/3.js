@@ -35,6 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   layout: 'blank',
@@ -93,6 +94,8 @@ var render = function() {
                     { attrs: { centered: "" } },
                     [
                       _c("p", [_vm._v(_vm._s(_vm.$t("app.description")))]),
+                      _vm._v(" "),
+                      _c("p", [_vm._v(_vm._s(_vm.moment().format("LLL")))]),
                       _vm._v(" "),
                       _c(
                         "v-row",
